@@ -46,3 +46,5 @@ launcher()
     echo $(sudo cp ./8085-simulator.desktop /usr/share/applications)
     echo $(sudo cp ./img/8085simIcon.png /usr/share/8085-sim)
 }
+
+main
