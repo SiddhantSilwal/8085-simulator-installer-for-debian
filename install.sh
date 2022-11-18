@@ -1,6 +1,7 @@
 #!/bin/bash
 
  deps=$(sudo apt-get install default-jdk && sudo apt-get install default-jre)
+ wget=/usr/bin/wget
 
 echo $(cd)
 main()
@@ -37,7 +38,7 @@ download()
 {
     echo $(sudo mkdir /usr/share/8085-sim)
     echo $(cd /usr/share/8085-sim)
-    echo $(sudo wget "https://github.com/8085simulator/8085simulator/raw/master/dist/8085Compiler.jar")
+    sudo wget "https://github.com/8085simulator/8085simulator/raw/master/dist/8085Compiler.jar"
     echo $(cd)
 }
 
