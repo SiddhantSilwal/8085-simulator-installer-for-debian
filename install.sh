@@ -1,7 +1,7 @@
 #!/bin/bash
 
 Dwnld=$(sudo wget https://github.com/8085simulator/8085simulator/raw/master/dist/8085Compiler.jar)
-deps=$(sudo apt install default-jdk && sudo apt install default-jre)
+deps=$(sudo apt-get install default-jdk && sudo apt-get install default-jre)
 echo $(cd)
 main()
 {
@@ -12,7 +12,7 @@ main()
             uninstall ) unstl; break;;
             *) instl; break;;
         esac
-
+    done
 }
 
 instl()
