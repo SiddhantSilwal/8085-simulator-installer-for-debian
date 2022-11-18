@@ -38,7 +38,6 @@ download()
 {
     echo $(sudo mkdir /usr/share/8085-sim)
     sudo wget "https://github.com/8085simulator/8085simulator/raw/master/dist/8085Compiler.jar" -P /usr/share/8085-sim
-    echo $(cd)
 }
 
 launcher()
