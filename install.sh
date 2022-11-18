@@ -1,7 +1,5 @@
 #!/bin/bash
 
-Dwnld=$(sudo wget "https://github.com/8085simulator/8085simulator/raw/master/dist/8085Compiler.jar")
-deps=$(sudo apt-get install default-jdk && sudo apt-get install default-jre)
 echo $(cd)
 main()
 {
@@ -17,6 +15,8 @@ main()
 
 instl()
 {
+    Dwnld=$(sudo wget "https://github.com/8085simulator/8085simulator/raw/master/dist/8085Compiler.jar")
+    deps=$(sudo apt-get install default-jdk && sudo apt-get install default-jre)
     echo "First installing Java to your system"
     echo $deps
     echo "Configuring application files for 8085-Simulator"
