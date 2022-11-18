@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=8085 Simulator
+Comment=
+Exec=java -jar /usr/share/8085-sim/8085Compiler.jar
+Icon=/usr/share/8085-sim/8085simIcon.png
+Terminal=false
+Type=Application
+StartupNotify=true
