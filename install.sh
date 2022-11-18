@@ -1,6 +1,7 @@
 #!/bin/bash
 
 Dwnld=$(sudo wget https://github.com/8085simulator/8085simulator/raw/master/dist/8085Compiler.jar)
+deps=$(sudo apt install default-jdk && sudo apt install default-jre)
 echo $(cd)
 main()
 {
@@ -16,8 +17,12 @@ main()
 
 instl()
 {
+    echo "First installing Java to your system"
+    echo $deps
+    echo "Configuring application files for 8085-Simulator"
     download
     launcher
+    echo "Success: 8085-Simulator has been installed"
 }
 
 unstl()
@@ -25,6 +30,7 @@ unstl()
     echo $(cd)
     echo $(sudo rm -rf /usr/share/8085-sim)
     echo $(sudo rm -rf /usr/share/applications/8085-simulator.desktop)
+    rcho "8085-Simulator uninstalled successfully"
 }
 
 download()
