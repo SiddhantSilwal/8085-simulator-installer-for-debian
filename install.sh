@@ -1,7 +1,5 @@
 #!/bin/bash
 
- deps=$(sudo apt-get install default-jdk && sudo apt-get install default-jre)
-
 echo $(cd)
 main()
 {
@@ -20,7 +18,7 @@ main()
 instl()
 {
     printf "\033[1mFirst installing Java to your system \n"
-    echo $deps
+    sudo apt-get -y install default-jdk default-jre
     printf "Configuring application files for 8085-Simulator\033[0m \n"
     download
     launcher
