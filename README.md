@@ -1,6 +1,6 @@
-# Jubin's 8085 simulator installer for Ubuntu
+# Jubin's 8085 simulator installer for Debian
 
-A bash script to install Jubin's 8085 microprocessor simulator to Ubuntu and it's
+A bash script to install Jubin's 8085 microprocessor simulator to Debian and it's
 derivatives. Jubin's 8085 simulator is a java based application which simulates the 8085
 microprocessor for assembly level programming.
 
@@ -23,8 +23,8 @@ Following are the necessary commands to run this installer :
 
 ```
 sudo apt-get install git wget
-git clone https://github.com/SiddhantSilwal/8085-simulator-installer-for-ubuntu.git
-cd 8085-simulator-installer-for-ubuntu
+git clone https://github.com/SiddhantSilwal/8085-simulator-installer-for-debian.git
+cd 8085-simulator-installer-for-debian
 chmod +x ./install.sh
 ./install.sh
 ```
