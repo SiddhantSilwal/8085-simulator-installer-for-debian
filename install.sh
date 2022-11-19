@@ -6,8 +6,8 @@
 echo $(cd)
 main()
 {
-    printf "Welcome to\033[1;34m 8085-Simulator installer by Siddhant Silwal to\033[0m "
-    printf "\033[1mDo you want to Install or Uninstall?\n 1)INSTALL \n 2)uninstall\033[0m" 
+    printf "Welcome to\033[1;34m 8085-Simulator installer by Siddhant Silwal to\033[0m \n"
+    printf "\033[1mDo you want to Install or Uninstall?\n 1)INSTALL \n 2)uninstall\033[0m \n" 
     read choice
     case $choice in
         1 ) instl; break;;
@@ -20,12 +20,12 @@ main()
 
 instl()
 {
-    printf "\033[1mFirst installing Java to your system"
+    printf "\033[1mFirst installing Java to your system \n"
     echo $deps
-    printf "Configuring application files for 8085-Simulator\033[0m"
+    printf "Configuring application files for 8085-Simulator\033[0m \n"
     download
     launcher
-    printf "\033[1;32mSuccess: 8085-Simulator has been installed\033[0m"
+    printf "\033[1;32mSuccess: 8085-Simulator has been installed\033[0m \n"
 }
 
 unstl()
@@ -33,7 +33,7 @@ unstl()
     echo $(cd)
     echo $(sudo rm -rf /usr/share/8085-sim)
     echo $(sudo rm -rf /usr/share/applications/8085-simulator.desktop)
-    printf "\033[1;32m8085-Simulator uninstalled successfully \033[0m"
+    printf "\033[1;32m8085-Simulator uninstalled successfully \033[0m \n"
 }
 
 download()
