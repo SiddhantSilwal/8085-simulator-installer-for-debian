@@ -34,7 +34,9 @@ chmod +x ./install.sh
 For manually installing 8085 simulator _.jar_ file.
 
 - [8085Compiler.jar](https://github.com/8085simulator/8085simulator/raw/master/dist/8085Compiler.jar)
-  previous version
+
+previous version
+
 - [8085Compiler_v1.jar](https://github.com/8085simulator/8085simulator/raw/master/8085Compiler_v1.jar)
 - [8085Compiler_v0.jar](https://github.com/8085simulator/8085simulator/raw/master/8085Compiler_v0.jar)
 
