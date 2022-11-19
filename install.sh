@@ -9,9 +9,11 @@ main()
     echo "Welcome to 8085-Simulator installer by Siddhant Silwal"
     echo "Do you want to Install or Uninstall"
     select yn in "INSTALL" "uninstall"; do
-        case $yn in 
+        case $yn in
+            install   ) instl; break;;
             uninstall ) unstl; break;;
-            *) instl; break;;
+            ""        ) instl; break;;
+            *         ) echo "Error: Invalid Option"; break;;
         esac
     done
 }
