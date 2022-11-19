@@ -6,13 +6,13 @@
 echo $(cd)
 main()
 {
-    printf "Welcome to\033[1;34m 8085-Simulator installer by Siddhant Silwal to\033[0m \n"
+    printf "Welcome to\033[1;34m 8085-Simulator installer by Siddhant Silwal \033[0m \n"
     printf "\033[1mDo you want to Install or Uninstall?\n 1)INSTALL \n 2)uninstall\033[0m \n" 
     read choice
     case $choice in
-        1 ) instl; break;;
-        2 ) unstl; break;;
-        "") instl; break;;
+        1 ) instl; ;;
+        2 ) unstl; ;;
+        "") instl; ;;
         * ) echo "Error: Invalid Option"; break;;
     esac
    
