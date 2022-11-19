@@ -1,7 +1,6 @@
 #!/bin/bash
 
- deps=$(sudo apt-get -y install default-jdk && sudo apt-get -y install default-jre)
- wget=/usr/bin/wget
+ deps=$(sudo apt-get install default-jdk && sudo apt-get install default-jre)
 
 echo $(cd)
 main()
