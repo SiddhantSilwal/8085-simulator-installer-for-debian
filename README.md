@@ -11,7 +11,7 @@ launcher icon for the users' ease of access.
 
 Following are the requrements for 8085-Simulator :
 
-1. **_wget_**
+1. **_wget, curl_**
 1. **_default-jdk_**
 1. **_default-jre_**
 
@@ -19,9 +19,21 @@ Following are the requrements for 8085-Simulator :
 
 ## How to run the installer
 
-Following are the necessary commands to run this installer :
+There are two ways to run the installer
 
+### a) One line installer
+
+Copy the following code to your terminal for an automated install from web
+
+```bash
+curl -s https://raw.githubusercontent.com/SiddhantSilwal/8085-simulator-installer-for-debian/refs/heads/main/webinstaller.sh | bash
 ```
+
+### b) By cloning the repository :
+
+For a more manual approach you can run clone our repository
+
+```bash
 sudo apt-get install git wget
 git clone https://github.com/SiddhantSilwal/8085-simulator-installer-for-debian.git
 cd 8085-simulator-installer-for-debian
