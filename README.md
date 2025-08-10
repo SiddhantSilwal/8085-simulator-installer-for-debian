@@ -23,7 +23,7 @@ There are two ways to run the installer
 
 ### a) One line installer
 
-Copy the following code to your terminal for an automated install from web
+Copy the following code to your terminal for an automated installation from web
 
 ```bash
 curl -s https://raw.githubusercontent.com/SiddhantSilwal/8085-simulator-installer-for-debian/refs/heads/main/webinstaller.sh | bash
